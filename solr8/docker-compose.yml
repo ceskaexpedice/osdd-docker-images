@@ -1,7 +1,19 @@
-version: "2"
+version: "3"
 services:
   solr:
-    build: .
-    image: moravianlibrary/solr6
+    image: ceskaexpedice/solr8:7.0.5
+    environment:
+      - JAVA_OPTS="-Xms1G -Xmx2G"
+      - "SOLR_JAVA_MEM=-Xms1g -Xmx2g"
+    volumes:
+      - ./mnt/containers/solr8/solr-data/data:/var/solr/data
+      - ./mnt/containers/solr8/oai:/opt/solr/server/solr/oai
     ports:
       - "8983:8983"
+    entrypoint:
+      - bash
+      - "-c"
+      #- "solr-precreate logs /logs; precreate-core search /search; precreate-core  processing /processing; exec solr -f"
+      - "precreate-core logs /logs; precreate-core search /search; precreate-core  processing /processing; exec solr -f"
+    restart: "always"
+
