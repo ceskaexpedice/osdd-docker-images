@@ -1,0 +1,13 @@
+version: "2"
+services:
+  solr:
+    build: .
+    image: pavelstastny/solr:9.1.1
+    ports:
+      - "8983:8983"
+    volumes:
+#      - ./processing:/var/solr/data/processing
+#      - ./logs:/var/solr/data/logs
+      - ./search:/var/solr/data/search
+      - ./oai:/opt/solr/server/solr/oai
+  
