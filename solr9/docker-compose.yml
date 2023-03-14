@@ -6,8 +6,8 @@ services:
     ports:
       - "8983:8983"
     volumes:
-#      - ./processing:/var/solr/data/processing
-#      - ./logs:/var/solr/data/logs
+      - ./processing:/var/solr/data/processing
+      - ./logs:/var/solr/data/logs
       - ./search:/var/solr/data/search
       - ./oai:/opt/solr/server/solr/oai
   
