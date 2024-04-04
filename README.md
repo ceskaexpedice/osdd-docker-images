@@ -1,8 +1,6 @@
 # kramerius-docker
  Docker balíček pro Kramerius https://github.com/ceskaexpedice/kramerius a další balíčky s komponenty, nutnýni pro jeho běh
 
-[![Join the chat at https://gitter.im/moravianlibrary/kramerius](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/moravianlibrary/kramerius?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 Pro spuštění je nutné mít nainstalované dvě komponenty:
 - http://docs.docker.com/installation/debian/
 - http://docs.docker.com/compose/install/
