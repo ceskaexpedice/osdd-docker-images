@@ -1,4 +1,9 @@
-# kramerius-docker
+
+# Upozornění
+Projekt prosím nepoužívat. Aktuální verze kontejnerů a nasazení je [zde](https://github.com/ceskaexpedice/kramerius-docker-compose)  
+
+
+## kramerius-docker
  Docker balíček pro Kramerius https://github.com/ceskaexpedice/kramerius a další balíčky s komponenty, nutnýni pro jeho běh
 
 Pro spuštění je nutné mít nainstalované dvě komponenty:
